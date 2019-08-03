@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: 'Grad';
+  src: url('../fonts/Grad-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaReg';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GradB';
+  src: url('../fonts/Grad-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaB';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Parkinson';
+  src: url('../fonts/parkinson-medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
