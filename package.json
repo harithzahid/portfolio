@@ -13,10 +13,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.13.45",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-postcss": "^2.1.2",
     "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-typography": "^2.3.0",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-typography": "^0.16.19",
