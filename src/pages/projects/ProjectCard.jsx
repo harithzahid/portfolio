@@ -1,18 +1,24 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Button from '../../components/button/Button.jsx';
+
 import styles from './projectCard.module.css';
 
-export default ({ title, category, technology, role, devDuration, link }) => (
+export default ({ title, category, technology, role, devDuration, links=[{ label: 'Details', path: '' }, { label: 'Link', path: '' }] }) => (
   <div className={styles.root}>
-    <div>
-      <h2>
-        {title}
-      </h2>
-      {
-        link && <div className={styles.link}><Link to={link}>DETAILS</Link></div>
-      }
-    </div>
+    <h2>
+      {title}
+    </h2>
+      <div className={styles.linkGroup}>
+        {
+          links.map((link) => (
+            <Button className={styles.link}>
+              {link.label}
+            </Button>
+          ))
+        }
+      </div>
     <div>
       <span>Category: </span>
       <span>{category}</span>

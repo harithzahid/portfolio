@@ -4,11 +4,10 @@
   align-items: center;
 
   & > div:first-child {
-    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    align-items: flex-end;
+    flex-direction: row-reverse;
   }
 }
 

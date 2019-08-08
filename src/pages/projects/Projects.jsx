@@ -43,7 +43,6 @@ const items = [
 
 export default () => (
   <div className={styles.root}>
-    {/* <h2><u>PROJECTS</u></h2> */}
     {
       items.map((item) => {
         return <ProjectCard {...item} />

@@ -4,18 +4,22 @@ import { Link } from 'gatsby';
 
 import styles from './button.module.css';
 
-export default (props) => (
-  props.link ? (
+export default ({ link, className, children, disabled, ...props}) => (
+  link ? (
     <Link
-      to={props.link}
-      className={classnames(styles.root, props.className)}
+      to={link}
+      className={classnames(styles.root, className)}
       activeClassName={classnames(styles.root, styles.active)}
     >
-      {props.children}
+      {children}
     </Link>
   ) : (
-    <div onClick={props.onClick} className={classnames(styles.root, styles.small, props.className, props.disabled && styles.disable)}>
-      {props.children}
-    </div>
+    <a
+      onClick={props.onClick}
+      className={classnames(styles.root, className, disabled && styles.disable)}
+      {...props}
+    >
+      {children}
+    </a>
   )
 )

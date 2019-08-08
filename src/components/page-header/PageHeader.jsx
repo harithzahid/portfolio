@@ -6,7 +6,12 @@ import ButtonGroup from '../button/ButtonGroup.jsx';
 
 import styles from './pageHeader.module.css';
 
-const buttonItems = [{ label: 'Project', link: '/' }, { label: 'Blog', link: '/blog' }, { label: 'Resume', link: '/resume' }, { label: 'Contact Me', link: '/contact-me' }]
+const buttonItems = [
+  { label: 'Projects', link: '/' },
+  // { label: 'Blog', link: '/blog' },
+  { label: 'Resume', link: '/resume' },
+  { label: 'Contact Me', link: '/contact-me' }
+]
 
 const ButtonContent = (props) => (
   <span>{props.label}</span>
@@ -18,7 +23,7 @@ export default () => (
     <div>Harith aka 'Harris'. | Web/Mobile App developer | Javascript, React.js, React Native, Node.js, PostgreSQL | <Link to="/blog">more ...</Link></div>
     <div className={styles.forHire}>
       <BlinkCircle />
-      <div>Available for hiring.</div>
+      <div>Available for hire</div>
     </div>
     <div>
       <ButtonGroup btnClassName={styles.btn} items={buttonItems} buttonContent={ButtonContent} />

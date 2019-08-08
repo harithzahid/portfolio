@@ -1,8 +1,6 @@
 import React from "react";
 
 import PageWrapper from '../components/page-wrapper/PageWrapper.jsx';
-import PageHeader from '../components/page-header/PageHeader.jsx';
-import PageFooter from '../components/page-footer/PageFooter.jsx';
 
 function encode(data) {
   return Object.keys(data)
@@ -35,8 +33,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <PageWrapper>
-        <PageHeader />
-        <div style={{ marginTop: 40 }}>
+        <div style={{ paddingTop: 40 }}>
           <form
             name="contact"
             method="post"
@@ -75,7 +72,6 @@ export default class Contact extends React.Component {
             </p>
           </form>
         </div>
-        <PageFooter />
       </PageWrapper>
     );
   }
