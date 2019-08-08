@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.3",
     "classnames": "^2.2.6",
     "gatsby": "^2.13.45",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -22,6 +23,7 @@
     "postcss-preset-env": "^6.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-pdf": "^4.1.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-doelger": "^0.16.19"

@@ -1,0 +1,14 @@
+.root {
+  & > h2 {
+    font-family: 'ProximaReg';
+  }
+
+  & > p {
+    margin-top: 10px;
+  }
+}
+
+.projectTitle:hover {
+  color: red;
+  text-decoration-line: underline;
+}

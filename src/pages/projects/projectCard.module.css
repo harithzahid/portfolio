@@ -1,0 +1,19 @@
+.root {
+  & > div:first-child {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.link {
+  padding: 1px 5px;
+  margin-left: 10px;
+  background-color: aqua;
+
+  & > * {
+    color: unset;
+    text-decoration: unset;
+    text-shadow: unset;
+    background-image: unset;
+  }
+}

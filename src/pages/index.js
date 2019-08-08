@@ -1,18 +1,14 @@
 import React from "react"
-import { Link } from 'gatsby'
 
-import PageWrapper from '../components/PageWrapper.jsx'
-import BlinkCircle from '../components/BlinkCircle.jsx';
-
-import styles from './index.module.css';
+import PageWrapper from '../components/page-wrapper/PageWrapper.jsx'
+import PageHeader from '../components/page-header/PageHeader.jsx';
+import PageFooter from '../components/page-footer/PageFooter.jsx';
+import Projects from './projects/Projects.jsx';
 
 export default () => (
-  <PageWrapper className={styles.root}>
-    <h1>Harith Zahid</h1>
-    <div>Harith aka 'Harris'. | Web/Mobile App developer | Javascript, React.js, React Native, Node.js, PostgreSQL | <Link to="/blog">more ...</Link></div>
-    <div className={styles.forHire}>
-      <BlinkCircle />
-      <p>Available for hiring.</p>
-    </div>
+  <PageWrapper>
+    <PageHeader />
+    <Projects />
+    <PageFooter />
   </PageWrapper>
 )

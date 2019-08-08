@@ -5,9 +5,11 @@ import styles from './pageWrapper.module.css';
 export default (props) => {
   return (
     <div className={styles.root}>
-      <div className={props.className}>
+      {props.header}
+      <div>
         {props.children}
       </div>
+      {props.footer}
     </div>
   )
 }

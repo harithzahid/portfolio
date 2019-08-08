@@ -1,0 +1,49 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > div:first-child {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+  }
+}
+
+.prevNextButton {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 25px;
+  padding: 2px;
+  align-items: flex-end;
+}
+
+.buttonGroup {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  & > span {
+    font-size: 13px;
+  }
+}
+
+.downloadBtn {
+  width: UNSET;
+  display: flex;
+  height: 35px;
+}
+
+.pdfWrapper {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

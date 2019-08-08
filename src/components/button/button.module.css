@@ -1,0 +1,26 @@
+.root {
+  width: 100%;
+  padding: 10px;
+  background-color: #fde9cf;
+  color: unset;
+  text-decoration: unset;
+  text-shadow: unset;
+  background-image: unset;
+  font-family: ProximaB;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.active {
+  background-color: #3599b7;
+  color: white;
+}
+
+.small {
+  width: 167.5px;
+}
+
+.disable {
+  background-color: #f3f3f3;
+  color: #b5b5b5;
+}
