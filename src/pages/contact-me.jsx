@@ -2,6 +2,8 @@ import React from "react";
 
 import PageWrapper from '../components/page-wrapper/PageWrapper.jsx';
 
+import styles from './contact-me.module.css';
+
 function encode(data) {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -24,7 +26,14 @@ export default class Contact extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then((res) => {
+        this.setState({
+          name: '',
+          email: '',
+          message: ''
+        });
+        alert('Success!')
+      })
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -47,29 +56,14 @@ export default class Contact extends React.Component {
                 Don’t fill this out: <input name="bot-field" />
               </label>
             </p>
-            <div style={{ display: 'flex' }} >
-              <p>
-                <label>
-                  Your name:<br />
-                <input style={{ marginRight: 10 }} type="text" name="name" onChange={this.handleChange}/>
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your email:<br />
-                  <input type="email" name="email" onChange={this.handleChange}/>
-                </label>
-              </p>
+            <div className={styles.inputGroup}>
+              <input className={styles.input} value={this.state.name} placeholder="Name" style={{ marginRight: 10 }} type="text" name="name" onChange={this.handleChange}/>
+              <input className={styles.input} value={this.state.email} placeholder="Email" type="email" name="email" onChange={this.handleChange}/>
+              <textarea placeholder="Message" value={this.state.message} style={{ width: '100%', height: '250px' } } name="message" onChange={this.handleChange}/>
             </div>
-            <p>
-              <label>
-                Message:<br />
-                <textarea style={{ width: '500px', height: '250px' }} name="message" onChange={this.handleChange}/>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
+            <div>
+              <button className={styles.submit} type="submit">Send</button>
+            </div>
           </form>
         </div>
       </PageWrapper>

@@ -1,0 +1,29 @@
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #fde9cf;
+  color: unset;
+  text-decoration: unset;
+  text-shadow: unset;
+  background-image: unset;
+  font-family: ProximaB;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-width: unset;
+  border-style: unset;
+  border-color: unset;
+  border-image: unset;
+  max-width: 100px;
+}
+
+.input {
+  max-width: 350px;
+  width: 100%;
+}
+
+.inputGroup {
+  & > * {
+    padding: 3px;
+    margin-bottom: 17px;
+  }
+}
