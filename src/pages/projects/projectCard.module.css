@@ -6,10 +6,13 @@
 }
 
 .link {
-  width: 200px;
+  width: 70px;
+  height: 35px;
+  text-align: center;
 }
 
 .linkGroup {
+  display: flex;
   margin-bottom: 20px;
   
   & > *:not(:last-child) {

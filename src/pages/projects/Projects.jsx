@@ -14,7 +14,7 @@ const items = [
   {
     title: 'Training Management System',
     category: 'Web Application',
-    technology: 'React.js | Flux | .net',
+    technology: 'React.js | Flux | .net | | CSSnext',
     role: 'Project Manager | Front-end Developer',
     devDuration: 'Ongoing',
   },
@@ -31,6 +31,10 @@ const items = [
     technology: 'React.js | Redux | Node.js | PostgreSQL | AWS Lambda | Semantic UI',
     role: 'Full stack developer',
     devDuration: 'Ongoing',
+    links: [
+      { label: 'Details', path: '/' },
+      { label: 'Link', path: '/' }
+    ]
   },
   {
     title: 'CMS & Web Portal',

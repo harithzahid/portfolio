@@ -29,8 +29,6 @@ export default class App extends Component {
     });
   }
 
-  // https://drive.google.com/uc?authuser=0&id=1a9V0yI9zF-E3aTqDt-NJcKwJt-Nfo4UD&export=download 
-  
   goToNextPage = () => {
     this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
     window.scrollTo({
@@ -55,7 +53,7 @@ export default class App extends Component {
               file={ResumePdf}
               onLoadSuccess={this.onDocumentLoadSuccess}
             >
-              <Page pageNumber={pageNumber} width={700} />
+              <Page pageNumber={pageNumber} width={window.innerWidth > 720 ? 700 : window.innerWidth - 20} />
             </Document>
           </div>
           <div className={styles.buttonGroup}>

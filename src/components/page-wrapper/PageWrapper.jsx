@@ -8,7 +8,7 @@ import styles from './pageWrapper.module.css';
 export default (props) => {
   return (
     <div className={styles.root}>
-      <div>
+      <div style={{ width: window.innerWidth, padding: '0 20px' }}>
         <PageHeader />
         <div style={{ minHeight: window.innerHeight - 479 }}>
           {props.children}

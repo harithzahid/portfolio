@@ -4,7 +4,6 @@
   align-items: center;
 
   & > div:first-child {
-    width: 700px; 
-    /* background-color: bisque; */
+    max-width: 720px; 
   }
 }

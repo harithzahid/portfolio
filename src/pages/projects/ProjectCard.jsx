@@ -5,7 +5,7 @@ import Button from '../../components/button/Button.jsx';
 
 import styles from './projectCard.module.css';
 
-export default ({ title, category, technology, role, devDuration, links=[{ label: 'Details', path: '' }, { label: 'Link', path: '' }] }) => (
+export default ({ title, category, technology, role, devDuration, links=[{ label: 'Details', path: '/' }, { label: 'Link', path: '' }] }) => (
   <div className={styles.root}>
     <h2>
       {title}
@@ -13,7 +13,7 @@ export default ({ title, category, technology, role, devDuration, links=[{ label
       <div className={styles.linkGroup}>
         {
           links.map((link) => (
-            <Button className={styles.link}>
+            <Button disabled={!link.path} className={styles.link}>
               {link.label}
             </Button>
           ))
