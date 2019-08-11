@@ -30,11 +30,7 @@ const items = [
     category: 'Web Application | Own project | Serverless',
     technology: 'React.js | Redux | Node.js | PostgreSQL | AWS Lambda | Semantic UI',
     role: 'Full stack developer',
-    devDuration: 'Ongoing',
-    links: [
-      { label: 'Details', path: '/' },
-      { label: 'Link', path: '/' }
-    ]
+    devDuration: 'Ongoing'
   },
   {
     title: 'CMS & Web Portal',

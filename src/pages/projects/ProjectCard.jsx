@@ -4,7 +4,7 @@ import Button from '../../components/button/Button.jsx';
 
 import styles from './projectCard.module.css';
 
-export default ({ title, category, technology, role, devDuration, links=[{ label: 'Details', path: '/' }, { label: 'Link', path: '' }] }) => (
+export default ({ title, category, technology, role, devDuration, links=[{ label: 'Details', path: '' }, { label: 'Link', path: '' }] }) => (
   <div className={styles.root}>
     <h2>
       {title}
