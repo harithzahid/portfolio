@@ -13,8 +13,26 @@ export default class App extends Component {
     numPages: null,
     pageNumber: 1,
     show: false,
+    width: null,
+    height: null
   };
   myRef = React.createRef();
+
+  componentDidMount() {
+    this.handleWindowSizeChange();
+    window.addEventListener('resize', this.handleWindowSizeChange)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange)
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({
+      width: window.innerWidth,
+      height: window.innerHeight
+    })
+  }
 
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages, show: true });
@@ -43,17 +61,17 @@ export default class App extends Component {
     const fileUrl = 'https://drive.google.com/uc?authuser=0&id=1a9V0yI9zF-E3aTqDt-NJcKwJt-Nfo4UD&export=download '
     
     return (
-      <PageWrapper>
+      this.state.width && <PageWrapper>
         <div className={styles.root}>
           <div ref={this.myRef}>
             <Button disabled={!show} className={styles.downloadBtn} href={fileUrl} target="_blank">DOWNLOAD</Button>
           </div>
-          <div className={styles.pdfWrapper} style={{ minHeight: window.innerHeight - 479 - 65 - 45 }}>
+          <div className={styles.pdfWrapper} style={{ minHeight: this.state.height - 479 - 65 - 45 }}>
             <Document
               file={ResumePdf}
               onLoadSuccess={this.onDocumentLoadSuccess}
             >
-              <Page pageNumber={pageNumber} width={window.innerWidth > 720 ? 700 : window.innerWidth - 20} />
+              <Page pageNumber={pageNumber} width={this.state.width > 720 ? 700 : this.state.width - 20} />
             </Document>
           </div>
           <div className={styles.buttonGroup}>

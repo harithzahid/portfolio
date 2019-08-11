@@ -1,6 +1,6 @@
 import Typography from "typography";
 import doelgerTheme from "typography-theme-doelger"
-import './typography.css'
+import './typography.module.css'
 
 doelgerTheme.headerFontFamily = [
     'Parkinson'

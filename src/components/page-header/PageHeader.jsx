@@ -9,8 +9,8 @@ import styles from './pageHeader.module.css';
 const buttonItems = [
   { label: 'Projects', link: '/' },
   // { label: 'Blog', link: '/blog' },
-  { label: 'Resume', link: '/resume' },
-  { label: 'Contact Me', link: '/contact-me' }
+  { label: 'Resume', link: '/resume/' },
+  { label: 'Contact Me', link: '/contact-me/' }
 ]
 
 const ButtonContent = (props) => (
