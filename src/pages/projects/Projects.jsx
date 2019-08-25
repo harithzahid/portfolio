@@ -35,10 +35,11 @@ const items = [
   },
   { 
     title: 'Question & Answer Portal',
-    category: 'Web Application | Own project | Serverless',
-    technology: 'React.js | Redux | Node.js | PostgreSQL | AWS Lambda | Semantic UI',
-    role: 'Full stack developer',
-    devDuration: 'Ongoing'
+    category: 'Web Application | Serverless | Personal project',
+    technology: 'React.js | Redux | Node.js | PostgreSQL | AWS Lambda',
+    role: 'Project owner | Full stack developer',
+    devDuration: 'Ongoing',
+    links: [{ label: 'Link', path: 'https://uponinsight-web.firebaseapp.com/home' }]
   },
   {
     title: 'CMS & Web Portal',

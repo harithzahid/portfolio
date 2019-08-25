@@ -21,7 +21,7 @@ export default () => (
   <div className={styles.root}>
     <h1>Harith Zahid</h1>
     <div>
-      I'm a passionate web/mobile app developer with a strong sense for aesthetics and interaction. Javascript, React.js, React Native, Node.js, SQL
+      I'm a passionate web/mobile app developer with a strong sense for aesthetics and user interaction. Javascript, React.js, React Native, Node.js, SQL
     </div>
     <div className={styles.forHire}>
       <BlinkCircle />
