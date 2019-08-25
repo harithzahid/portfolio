@@ -20,7 +20,9 @@ const ButtonContent = (props) => (
 export default () => (
   <div className={styles.root}>
     <h1>Harith Zahid</h1>
-    <div>Harith aka 'Harris'. | Web/Mobile App developer | Javascript, React.js, React Native, Node.js, PostgreSQL</div>
+    <div>
+      I'm a passionate web/mobile app developer with a strong sense for aesthetics and interaction. Javascript, React.js, React Native, Node.js, SQL
+    </div>
     <div className={styles.forHire}>
       <BlinkCircle />
       <div>Available for hire</div>

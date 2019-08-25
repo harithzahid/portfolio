@@ -12,6 +12,14 @@ const items = [
     devDuration: '5 month',
   },
   {
+    title: 'Responsive Landing Page For Software House',
+    category: 'Landing Page',
+    technology: 'React.js',
+    role: 'Front-end Developer',
+    devDuration: '1 month',
+    links: [{ label: 'Link', path: 'http://taukala.com.my' }]
+  },
+  {
     title: 'Training Management System',
     category: 'Web Application',
     technology: 'React.js | Flux | .net | | CSSnext',
@@ -38,6 +46,7 @@ const items = [
     technology: 'React.js | Flux | .net',
     role: 'Front-end Developer',
     devDuration: '2 month',
+    links: [{ label: 'Link', path: 'http://sustainability.cidbec.com.my/' }]
   }
 ]
 

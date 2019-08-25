@@ -9,10 +9,10 @@ export default ({ title, category, technology, role, devDuration, links=[{ label
     <h2>
       {title}
     </h2>
-      <div className={styles.linkGroup}>
+      <div className={styles.linkGroup} style={{ display: links.filter((link) => link.path).length ? 'flex' : 'contents' }}>
         {
-          links.map((link) => (
-            <Button disabled={!link.path} className={styles.link}>
+          links.map((link) =>  (
+            link.path && <Button className={styles.link} href={link.path} target="_blank">
               {link.label}
             </Button>
           ))
