@@ -5,6 +5,14 @@ import styles from './projects.module.css'
 
 const items = [
   { 
+    title: 'Question & Answer Social Networking Site',
+    category: 'Web Application | Serverless | Personal project',
+    technology: 'React.js | Redux | Node.js | Google Cloud SQL & Function',
+    role: 'Project owner | Full stack developer',
+    devDuration: 'Ongoing',
+    links: [{ label: 'Link', path: 'https://uponinsight-web.firebaseapp.com/' }, { label: 'Code', path: 'https://github.com/harithzahid/uponinsight' }]
+  },
+  {
     title: 'Construction Safety and Health Assessment System',
     category: 'Mobile App | Android',
     technology: 'React Native | Flux | Sqlite | .net',
@@ -32,14 +40,6 @@ const items = [
     technology: 'React.js | Flux | .net',
     role: 'Front-end Developer',
     devDuration: '5 month'
-  },
-  { 
-    title: 'Question & Answer Portal',
-    category: 'Web Application | Serverless | Personal project',
-    technology: 'React.js | Redux | Node.js | PostgreSQL | AWS Lambda',
-    role: 'Project owner | Full stack developer',
-    devDuration: 'Ongoing',
-    links: [{ label: 'Link', path: 'https://uponinsight-web.firebaseapp.com/home' }]
   },
   {
     title: 'CMS & Web Portal',
