@@ -5,7 +5,7 @@ import styles from './projects.module.css'
 
 const items = [
   { 
-    title: 'Question & Answer Social Networking Site',
+    title: 'Question & Answer Platform',
     category: 'Web Application | Serverless | Personal project',
     technology: 'React.js | Redux | Node.js | Google Cloud SQL & Function',
     role: 'Project owner | Full stack developer',
