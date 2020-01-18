@@ -4,7 +4,7 @@ import { Document, Page } from "react-pdf";
 import Button from '../components/button/Button.jsx';
 import PageWrapper from '../components/page-wrapper/PageWrapper.jsx'
 
-import ResumePdf from '../../static/Harith_Zahid_resume.pdf'
+import ResumePdf from '../../static/Harith_Zahid_resume_small.pdf'
 
 import styles from './resume.module.css';
 
@@ -63,7 +63,7 @@ export default class App extends Component {
 
   render() {
     const { pageNumber, numPages, show } = this.state;
-    const fileUrl = 'https://drive.google.com/uc?authuser=0&id=1pRr7PwZaVPbKkk6KaQ0skEW13QCwwg85&export=download '
+    const fileUrl = 'https://drive.google.com/uc?authuser=0&id=1LpLv5ATulEf62LDhhsLGKJ7MpzQObbt9&export=download '
 
     return (
       this.state.width && <PageWrapper>
