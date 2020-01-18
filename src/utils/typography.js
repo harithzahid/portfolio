@@ -3,7 +3,7 @@ import doelgerTheme from "typography-theme-doelger"
 import './typography.module.css'
 
 doelgerTheme.headerFontFamily = [
-    'ProximaB'
+    'Graphik-Medium'
 ]
 
 doelgerTheme.bodyFontFamily = [

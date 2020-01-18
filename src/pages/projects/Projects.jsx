@@ -4,23 +4,29 @@ import ProjectCard from './ProjectCard.jsx';
 import styles from './projects.module.css'
 
 const items = [
-  { 
-    title: 'Question & Answer Platform',
-    category: 'Web Application | Serverless | Personal project',
-    technology: 'React.js | Redux | Node.js | Google Cloud SQL & Function',
-    role: 'Project owner | Full stack developer',
+  {
+    title: 'Insighttribe.co',
+    category: 'Web Application | Serverless | Side project',
+    technology: 'React.js | Redux | Node.js | Google Cloud Function | Postgresql',
+    role: 'Founder | Full-stack Developer',
     devDuration: 'Ongoing',
-    links: [{ label: 'Link', path: 'https://uponinsight-web.firebaseapp.com/' }, { label: 'Code', path: 'https://github.com/harithzahid/uponinsight' }]
+    links: [
+      { label: 'Link', path: 'https://insighttribe.co/' },
+      { label: 'Code', path: 'https://github.com/harithzahid/uponinsight' }
+    ]
   },
   {
     title: 'Construction Safety and Health Assessment System',
-    category: 'Mobile App | Android',
+    category: 'Mobile App | Android | Internal system',
     technology: 'React Native | Flux | Sqlite | .net',
     role: 'Front-end Developer',
     devDuration: '5 month',
+    links: [
+      { label: 'Preview', route: '/media/shassic'  }
+    ]
   },
   {
-    title: 'Responsive Landing Page For Software House',
+    title: 'Software House Landing Page',
     category: 'Landing Page',
     technology: 'React.js',
     role: 'Front-end Developer',
@@ -29,25 +35,30 @@ const items = [
   },
   {
     title: 'Training Management System',
-    category: 'Web Application',
+    category: 'Web Application | Internal system',
     technology: 'React.js | Flux | .net | | CSSnext',
     role: 'Project Manager | Front-end Developer',
-    devDuration: 'Ongoing',
-  },
-  { 
-    title: 'Carbon Reduction in Construction Assessment System',
-    category: 'Web Application',
-    technology: 'React.js | Flux | .net',
-    role: 'Front-end Developer',
-    devDuration: '5 month'
+    devDuration: '5 Month',
+    links: [
+      { label: 'Preview', route: '/media/tms'  }
+    ]
   },
   {
-    title: 'CMS & Web Portal',
-    category: 'CMS | Web Portal',
+    title: 'Carbon Reduction in Construction Assessment System',
+    category: 'Web Application | Internal system',
     technology: 'React.js | Flux | .net',
     role: 'Front-end Developer',
-    devDuration: '2 month',
-    links: [{ label: 'Link', path: 'http://sustainability.cidbec.com.my/' }]
+    devDuration: '5 month',
+    // links: [
+    //   { label: 'Preview', route: '/media/myCRest'  }
+    // ]
+  },
+  {
+    title: 'Ecommerce Platform',
+    category: 'Web & Mobile Application',
+    technology: 'React.js | React Native',
+    role: 'Front-end Developer',
+    devDuration: 'Ongoing'
   }
 ]
 

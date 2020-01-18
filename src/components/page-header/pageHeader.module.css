@@ -11,7 +11,7 @@
   & > div:nth-child(2) {
     font-size: 18px;
     line-height: 1.4;
-    font-family: 'GradB';
+    font-family: 'GradReg';
   }
 
   & > div:nth-child(4) {
@@ -20,17 +20,35 @@
 }
 
 
-.forHire {
+.contact {
   display: flex;
+  justify-content: space-between;
   margin-top: 15px;
   padding-bottom: 30px;
   border-bottom: 1px solid #b7b7b7;
+
+  @media only screen and (max-width: 400px) {
+    flex-direction: column;
+  }
 
   & > p {
     font-size: 15px;
   }
 }
 
+.forHire {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 400px) {
+    margin-bottom: 15px;
+  }
+}
+
 .btn {
   height: 45px;
+}
+
+a {
+  background-image: none;
 }

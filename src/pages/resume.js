@@ -4,12 +4,12 @@ import { Document, Page } from "react-pdf";
 import Button from '../components/button/Button.jsx';
 import PageWrapper from '../components/page-wrapper/PageWrapper.jsx'
 
-import ResumePdf from '../../static/resume.pdf'
+import ResumePdf from '../../static/Harith_Zahid_resume.pdf'
 
 import styles from './resume.module.css';
 
 export default class App extends Component {
-  state = { 
+  state = {
     numPages: null,
     pageNumber: 1,
     show: false,
@@ -56,10 +56,15 @@ export default class App extends Component {
     });
   }
 
+  // <div className={styles.buttonGroup}>
+  //   <Button className={styles.prevNextButton} disabled={!show || numPages > pageNumber} onClick={this.goToPrevPage}>{'<'}</Button>
+  //   <Button className={styles.prevNextButton} disabled={!show || pageNumber >= numPages} onClick={this.goToNextPage}>{'>'}</Button>
+  // </div>
+
   render() {
     const { pageNumber, numPages, show } = this.state;
-    const fileUrl = 'https://drive.google.com/uc?authuser=0&id=1a9V0yI9zF-E3aTqDt-NJcKwJt-Nfo4UD&export=download '
-    
+    const fileUrl = 'https://drive.google.com/uc?authuser=0&id=1pRr7PwZaVPbKkk6KaQ0skEW13QCwwg85&export=download '
+
     return (
       this.state.width && <PageWrapper>
         <div className={styles.root}>
@@ -73,10 +78,6 @@ export default class App extends Component {
             >
               <Page pageNumber={pageNumber} width={this.state.width > 720 ? 700 : this.state.width - 20} />
             </Document>
-          </div>
-          <div className={styles.buttonGroup}>
-            <Button className={styles.prevNextButton} disabled={!show || numPages > pageNumber} onClick={this.goToPrevPage}>{'<'}</Button>
-            <Button className={styles.prevNextButton} disabled={!show || pageNumber >= numPages} onClick={this.goToNextPage}>{'>'}</Button>
           </div>
         </div>
       </PageWrapper>

@@ -6,14 +6,14 @@
 }
 
 .link {
-  width: 70px;
+  width: fit-content;
   height: 35px;
   text-align: center;
 }
 
 .linkGroup {
   margin-bottom: 15px;
-  
+
   & > *:not(:last-child) {
     margin-right: 10px;
   }

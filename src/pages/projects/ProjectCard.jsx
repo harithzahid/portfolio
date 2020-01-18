@@ -9,10 +9,10 @@ export default ({ title, category, technology, role, devDuration, links=[{ label
     <h2>
       {title}
     </h2>
-      <div className={styles.linkGroup} style={{ display: links.filter((link) => link.path).length ? 'flex' : 'contents' }}>
+      <div className={styles.linkGroup} style={{ display: links.filter((link) => link.path).length || links.filter((link) => link.route).length ? 'flex' : 'contents' }}>
         {
           links.map((link) =>  (
-            link.path && <Button className={styles.link} href={link.path} target="_blank">
+            (link.path || link.route) && <Button className={styles.link} href={link.path} link={link.route} target="_blank">
               {link.label}
             </Button>
           ))
@@ -31,7 +31,7 @@ export default ({ title, category, technology, role, devDuration, links=[{ label
       <span>{role}</span>
     </div>
     <div>
-      <span>Duration: </span>
+      <span>Project Duration: </span>
       <span>{devDuration}</span>
     </div>
   </div>
