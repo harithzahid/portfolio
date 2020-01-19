@@ -30,7 +30,7 @@ export default () => (
     <div className={styles.contact}>
       <div className={styles.forHire}>
         <BlinkCircle />
-        <div>Available for hire</div>
+        <div style={{ marginTop: 2 }}>Available for hire</div>
       </div>
       <div>
         <a href="mailto:harithzahid.dev@gmail.com" target="_blank">
