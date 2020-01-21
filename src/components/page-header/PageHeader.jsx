@@ -33,7 +33,7 @@ export default () => (
         <div style={{ marginTop: 2 }}>Available for hire</div>
       </div>
       <div>
-        <a href="mailto:harithzahid.dev@gmail.com" target="_blank">
+        <a href="mailto:mharith.dev@gmail.com" target="_blank">
           <Button size="mini" icon>
             <Icon name='mail' />
           </Button>
