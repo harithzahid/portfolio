@@ -17,21 +17,19 @@ const img = [
 const TmsMedia = () => {
 
   return (
-    <div style={{ width: 'calc(100vw - 15px)', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-      <div style={{ width: 680, alignSelf: 'center' }}>
-        <div style={{ margin: '30px 0' }}>
-          <Button onClick={() => window.history.back()}>{'<'}</Button>
-        </div>
-        <div style={{ marginBottom: 30 }}>
-          
-        </div>
-        <div>
-          {
-            img.map((item) => {
-              return <img style={{ marginBottom: 30 }} key={item.id} src={item.path} />
-            })
-          }
-        </div>
+    <div style={{ width: 'calc(100vw - 15px)', maxWidth: 680, margin: 'auto', padding: 15, display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+      <div style={{ margin: '30px 0' }}>
+        <Button onClick={() => window.history.back()}>{'<'}</Button>
+      </div>
+      <div style={{ marginBottom: 30 }}>
+
+      </div>
+      <div>
+        {
+          img.map((item) => {
+            return <img style={{ marginBottom: 30 }} key={item.id} src={item.path} />
+          })
+        }
       </div>
     </div>
   )

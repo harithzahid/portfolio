@@ -17,22 +17,38 @@ const img = [
 const Shassic = () => {
 
   return (
-    <div style={{ width: 'calc(100vw - 15px)', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-      <div style={{ width: 680, alignSelf: 'center' }}>
+    <div
+      style={{
+        maxWidth: 680,
+        padding: 15,
+        width: 'calc(100vw - 15px)',
+        margin: 'auto',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column'
+      }}
+    >
         <div style={{ margin: '30px 0' }}>
           <Button onClick={() => window.history.back()}>{'<'}</Button>
         </div>
         <div style={{ marginBottom: 30 }}>
-
         </div>
-        <div>
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            width: '100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: 'auto'
+          }}
+        >
           {
             img.map((item) => {
-              return <img style={{ marginBottom: 30, maxWidth: 325, marginRight: 15 }} key={item.id} src={item.path} />
+              return <img style={{ marginBottom: 30, minWidth: 200, maxWidth: 300, width: '100%', marginRight: 15 }} key={item.id} src={item.path} />
             })
           }
         </div>
-      </div>
     </div>
   )
 }
